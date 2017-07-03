@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Roboto',
+  src: url(../fonts/roboto.ttf);
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto';
+}
+
+body {
+  margin: 0;
+  background-image: url(../images/bg.png);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(73,86,104, 0.2);
+  z-index: -1;
+}
+
+.container {
+  width: 814px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+label {
+  font-size: 12px;
+  margin-bottom: 7px;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+}
+
+.form-input {
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #1abc9c;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 9999999px;
+  box-shadow: 0px 9px 24px 12px rgba(0,75,60, 0.12);
+  border: none;
+  padding: 21px;
+  display: block;
+  margin: 0 auto 16px;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border-radius: 8px;
+  min-height: 48px;
+  border: none;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: none;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+  margin-top: 14px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  padding: 0 8px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  margin-top: 14px;
+  position: relative;
+  padding-right: 20px;
+  margin: 14px 0 10px;
+  margin-right: 10px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #ececec;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.select2-dropdown {
+  border: none;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+  }
+}

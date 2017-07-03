@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer > img {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
