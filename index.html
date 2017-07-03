@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>travel.prosto.insure.test</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <label for="select">Куда вы собираетесь?</label>
+  <select id="select"></select>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <script type="text/javascript">
+    $('select').select2({
+      width: '100%',
+      multiple: true,
+      data: [
+        { text: "Быстрый выбор", 
+          children: [
+            {
+              id: 1,
+              text: "Страны Шенгена"
+            },
+            {
+              id: 2,
+              text: "Весь мир"
+            }
+          ]     
+        },
+        { text: "Все страны", 
+          children: [
+            {
+              id: 3,
+              text: "Абхазия"
+            },
+            {
+              id: 4,
+              text: "Бутан"
+            },
+            {
+              id: 5,
+              text: "Якутск"
+            }
+          ]  
+        }
+      ]    
+    });
+  </script>
+  
+</body>
+</html>
